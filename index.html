@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sonar - Plataforma de Inclusão</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-blue-50 text-blue-800 font-sans min-h-screen flex flex-col">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      <a href="#inicio" class="text-2xl font-semibold text-blue-800 select-none focus-outline" tabindex="0">Sonar</a>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a href="#inicio" id="nav-inicio" class="nav-link focus-outline active">Início</a>
+        <a href="#cursos" id="nav-cursos" class="nav-link focus-outline">Cursos</a>
+        <a href="#vagas" id="nav-vagas" class="nav-link focus-outline">Vagas</a>
+        <a href="#sobre-nos" id="nav-sobre" class="nav-link focus-outline">Sobre Nós</a>
+      </div>
+      <div class="hidden md:flex space-x-3 items-center">
+        <a href="#entrar" class="bg-blue-200 text-blue-800 px-3 py-1 rounded-md font-medium hover:bg-blue-300 focus-outline" tabindex="0">Entrar</a>
+        <a href="#cadastrar" class="bg-blue-700 text-white px-3 py-1 rounded-md font-semibold hover:bg-blue-800 focus-outline" tabindex="0">Cadastrar</a>
+      </div>
+      <!-- Mobile menu button-->
+      <button id="mobile-menu-button" aria-label="Abrir menu" class="md:hidden focus-outline">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner">
+    <a href="#inicio" class="block border-b border-blue-100 p-3 text-blue-800 focus-outline">Início</a>
+    <a href="#cursos" class="block border-b border-blue-100 p-3 text-blue-800 focus-outline">Cursos</a>
+    <a href="#vagas" class="block border-b border-blue-100 p-3 text-blue-800 focus-outline">Vagas</a>
+    <a href="#sobre-nos" class="block border-b border-blue-100 p-3 text-blue-800 focus-outline">Sobre Nós</a>
+    <div class="flex space-x-3 p-3">
+      <a href="#entrar" class="flex-1 bg-blue-200 text-blue-800 text-center py-1 rounded-md font-medium hover:bg-blue-300">Entrar</a>
+      <a href="#cadastrar" class="flex-1 bg-blue-700 text-white text-center py-1 rounded-md font-semibold hover:bg-blue-800">Cadastrar</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Início Section -->
+<section id="inicio" class="max-w-7xl mx-auto px-6 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-gradient-to-r from-blue-100 to-blue-200 rounded-md shadow-md mt-8 md:mt-12">
+  <div>
+    <h1 class="text-3xl md:text-4xl font-semibold mb-4">Bem-vindo ao Sonar</h1>
+    <p class="text-base md:text-lg mb-6 max-w-lg">Conectando talentos surdos e deficientes auditivos com oportunidades de trabalho, enquanto ensinamos Libras para todos.</p>
+    <div class="flex space-x-4">
+      <a href="#vagas" class="bg-blue-700 text-white px-5 py-2 rounded-md font-semibold hover:bg-blue-800 focus-outline">Ver Vagas</a>
+      <a href="#cursos" class="bg-blue-200 text-blue-800 px-5 py-2 rounded-md font-medium hover:bg-blue-300 focus-outline">Aprender Libras</a>
+    </div>
+  </div>
+  <div class="rounded-lg overflow-hidden shadow-lg max-w-md mx-auto md:mx-0">
+    <img
+      src="sonar imagem inicio.jpg"
+      alt="Duas pessoas usando linguagem de sinais em uma iluminação moderna com fundo roxo vívido"
+      onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Imagem+não+disponível';"
+      class="w-full h-auto object-cover"
+    />
+  </div>
+</section>
+
+<!-- Por que escolher o Sonar? -->
+<section class="mt-20 max-w-7xl mx-auto px-6 text-center">
+  <h2 class="text-2xl md:text-3xl font-semibold mb-8">Por que escolher o Sonar?</h2>
+  <div class="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+    <!-- Cards -->
+    <article class="bg-white rounded-md shadow hover:shadow-lg p-6 text-left flex flex-col items-center space-y-4">
+      <img
+        src="https://placehold.co/96x96?text=M%C3%A3o+fazendo+voc%C3%AA+de+linguagem+de+sinais+com+fundo+verde+azulado"
+        alt="Mão fazendo o sinal de vocÃª em linguagem de sinais com fundo verde azulado"
+        class="w-24 h-24 rounded-full object-cover"
+        onerror="this.onerror=null;this.src='https://placehold.co/96x96?text=Imagem+não+disponível';"
+      />
+      <h3 class="text-lg font-semibold">Oportunidades Exclusivas</h3>
+      <p class="text-sm text-blue-900">Vagas de emprego especialmente externas para a comunidade surda e deficientes auditivos.</p>
+    </article>
+
+    <article class="bg-white rounded-md shadow hover:shadow-lg p-6 text-left flex flex-col items-center space-y-4">
+      <img
+        src="https://placehold.co/96x96?text=Close-up+de+pessoas+assistindo+a+evento+com+ilumina%C3%A7%C3%A3o+azul+e+foco+em+m%C3%A3os+levantadas"
+        alt="Pessoas assistindo a um evento com iluminação azul e foco em mãos levantadas"
+        class="w-24 h-24 rounded-full object-cover"
+        onerror="this.onerror=null;this.src='https://placehold.co/96x96?text=Imagem+não+disponível';"
+      />
+      <h3 class="text-lg font-semibold">Educação em Libras</h3>
+      <p class="text-sm text-blue-900">Cursos completos de Libras com vídeos e exercícios práticos para todos os níveis.</p>
+    </article>
+
+    <article class="bg-white rounded-md shadow hover:shadow-lg p-6 text-left flex flex-col items-center space-y-4">
+      <img
+        src="https://placehold.co/96x96?text=Placa+de+acessibilidade+indicando+cadeira+de+rodas+e+surdez"
+        alt="Placa de acessibilidade indicando cadeira de rodas e deficiência auditiva"
+        class="w-24 h-24 rounded-full object-cover"
+        onerror="this.onerror=null;this.src='https://placehold.co/96x96?text=Imagem+não+disponível';"
+      />
+      <h3 class="text-lg font-semibold">Totalmente Acessível</h3>
+      <p class="text-sm text-blue-900">Plataforma desenvolvida com foco em acessibilidade para a comunidade surda e deficientes auditivos.</p>
+    </article>
+  </div>
+</section>
+
+<!-- Cursos de Libras -->
+<section id="cursos" class="mt-28 max-w-7xl mx-auto px-6 text-center">
+  <h2 class="text-2xl md:text-3xl font-semibold mb-3">Cursos de Libras</h2>
+  <p class="mb-12 text-blue-900 max-w-xl mx-auto">Aprenda Libras com nossos cursos interativos e acessíveis</p>
+
+  <div class="grid gap-8 md:grid-cols-4 max-w-7xl mx-auto">
+    <!-- Curso card - básico -->
+    <article class="bg-white shadow rounded-md flex flex-col overflow-hidden">
+      <div class="relative">
+        <img
+          src="https://placehold.co/600x360?text=Hand+signing+alphabet+in+clear+blue+background"
+          alt="Mão fazendo o sinal do alfabeto em linguagem de sinais com fundo azul limpo"
+          class="object-cover w-full h-48"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x360?text=Imagem+não+disponível';"
+        />
+        <span class="absolute top-2 right-2 bg-blue-700 text-white text-xs font-semibold rounded-full px-3 py-1">Novato</span>
+      </div>
+      <div class="flex-1 flex flex-col p-4">
+        <h3 class="text-lg font-semibold text-left mb-1">Alfabeto em Libras - Básico</h3>
+        <p class="text-sm flex-1 text-left text-blue-900 mb-3">Aprenda o alfabeto brasileiro em Libras com projeções claras e exercícios práticos.</p>
+        <div class="flex items-center space-x-3 mb-4 text-blue-900 text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3" />
+            <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>45 minutos</span>
+        </div>
+        <button class="bg-blue-700 text-white rounded-md py-2 text-sm font-semibold hover:bg-blue-800 focus-outline">Iniciar Curso</button>
+      </div>
+    </article>
+
+    <!-- Curso card - números -->
+    <article class="bg-white shadow rounded-md flex flex-col overflow-hidden">
+      <div class="relative">
+        <img
+          src="https://placehold.co/600x360?text=Blue+wall+with+peace+signs+in+Libras"
+          alt="Parede azul com sinais de paz em Libras desenhados"
+          class="object-cover w-full h-48"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x360?text=Imagem+não+disponível';"
+        />
+        <span class="absolute top-2 right-2 bg-blue-700 text-white text-xs font-semibold rounded-full px-3 py-1">Novato</span>
+      </div>
+      <div class="flex-1 flex flex-col p-4">
+        <h3 class="text-lg font-semibold text-left mb-1">Números e Quantidades em Libras</h3>
+        <p class="text-sm flex-1 text-left text-blue-900 mb-3">Domine os números de 1 a 100 e aprenda a expressar quantidades específicas em Libras.</p>
+        <div class="flex items-center space-x-3 mb-4 text-blue-900 text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3" />
+            <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>30 minutos</span>
+        </div>
+        <button class="bg-blue-700 text-white rounded-md py-2 text-sm font-semibold hover:bg-blue-800 focus-outline">Iniciar Curso</button>
+      </div>
+    </article>
+
+    <!-- Curso card - cumprimentos -->
+    <article class="bg-white shadow rounded-md flex flex-col overflow-hidden">
+      <div class="relative">
+        <img
+          src="https://placehold.co/600x360?text=Two+people+doing+sign+language+with+purple+lighting"
+          alt="Duas pessoas fazendo linguagem de sinais com iluminação roxa"
+          class="object-cover w-full h-48"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x360?text=Imagem+não+disponível';"
+        />
+        <span class="absolute top-2 right-2 bg-indigo-700 text-white text-xs font-semibold rounded-full px-3 py-1">Intermediário</span>
+      </div>
+      <div class="flex-1 flex flex-col p-4">
+        <h3 class="text-lg font-semibold text-left mb-1">Cumprimentos e Apresentações</h3>
+        <p class="text-sm flex-1 text-left text-blue-900 mb-3">Aprenda cumprimentos formais e informativos, como se apresentar e fazer perguntas básicas.</p>
+        <div class="flex items-center space-x-3 mb-4 text-blue-900 text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3" />
+            <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>60 minutos</span>
+        </div>
+        <button class="bg-blue-700 text-white rounded-md py-2 text-sm font-semibold hover:bg-blue-800 focus-outline">Iniciar Curso</button>
+      </div>
+    </article>
+
+    <!-- Curso card - avançado -->
+    <article class="bg-white shadow rounded-md flex flex-col overflow-hidden">
+      <div class="relative">
+        <img
+          src="https://placehold.co/600x360?text=Audience+at+concert+with+raised+hands+purple+and+blue+lighting"
+          alt="Público em concerto com mãos levantadas com iluminação azul e roxa"
+          class="object-cover w-full h-48"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x360?text=Imagem+não+disponível';"
+        />
+        <span class="absolute top-2 right-2 bg-green-700 text-white text-xs font-semibold rounded-full px-3 py-1">Avançado</span>
+      </div>
+      <div class="flex-1 flex flex-col p-4">
+        <h3 class="text-lg font-semibold text-left mb-1">Conversação Avançada</h3>
+        <p class="text-sm flex-1 text-left text-blue-900 mb-3">Aprimore suas habilidades em Libras com situações cotidianas e debates avançados.</p>
+        <div class="flex items-center space-x-3 mb-4 text-blue-900 text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3" />
+            <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>90 minutos</span>
+        </div>
+        <button class="bg-blue-700 text-white rounded-md py-2 text-sm font-semibold hover:bg-blue-800 focus-outline">Iniciar Curso</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Vagas Section -->
+<section id="vagas" class="max-w-7xl mx-auto px-6 py-12 text-center mt-24">
+  <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 mb-2">Oportunidades de Trabalho</h2>
+  <p class="text-blue-800 mb-12 max-w-xl mx-auto">Vagas especialmente voltadas para a comunidade surda e deficientes auditivos</p>
+
+  <p class="text-blue-600">Nenhuma vaga disponível no momento.</p>
+</section>
+
+<!-- Sobre Nós Section -->
+<section id="sobre-nos" class="max-w-7xl mx-auto px-6 py-12 mt-24">
+  <h2 class="text-center text-2xl md:text-3xl font-semibold text-blue-800 mb-12">Sobre o Sonar</h2>
+  <div class="overflow-hidden rounded-md shadow-md mb-10 max-w-xl mx-auto">
+    <img 
+      src="https://placehold.co/1200x300?text=Blue+wall+with+peace+signs+in+Libras+graffiti+style"
+      alt="Parede azul com sinais de paz em Libras no estilo graffiti"
+      class="object-cover w-full"
+      onerror="this.onerror=null;this.src='https://placehold.co/1200x300?text=Imagem+não+disponível';"
+    />
+  </div>
+
+  <div class="max-w-4xl mx-auto space-y-8">
+    <section class="bg-white rounded-md shadow-md p-6">
+      <h3 class="font-semibold text-blue-800 mb-2">Nossa Missão</h3>
+      <p class="text-blue-900 text-sm leading-relaxed">O Sonar nasceu com o propósito de criar pontes de comunicação e oportunidades para a comunidade surda e deficientes auditivos. Acreditamos que a inclusão digital e profissional é um direito fundamental, e vencemos para romper barreiras através da tecnologia e educação.</p>
+    </section>
+
+    <section class="bg-white rounded-md shadow-md p-6">
+      <h3 class="font-semibold text-blue-800 mb-2">Nossa Visão</h3>
+      <p class="text-blue-900 text-sm leading-relaxed">Ser a principal plataforma de conectividade entre talentos surdos e oportunidades de trabalho no Brasil, ao mesmo tempo em que promovemos o ensino de Libras para toda a sociedade, construindo um futuro mais inclusivo e acessível.</p>
+    </section>
+
+    <section class="bg-white rounded-md shadow-md p-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+      <article class="border-l-4 border-blue-700 p-3 bg-blue-50 rounded-md">
+        <h4 class="font-semibold mb-1">🤝 Inclusão</h4>
+        <p class="text-blue-900 text-sm leading-relaxed">Acreditamos que ganharemos todas as oportunidades iguais, independentemente de suas limitações auditivas.</p>
+      </article>
+      <article class="border-l-4 border-blue-700 p-3 bg-blue-50 rounded-md">
+        <h4 class="font-semibold mb-1">🎯 Acessibilidade</h4>
+        <p class="text-blue-900 text-sm leading-relaxed">Desenvolvemos soluções que são verdadeiramente acessíveis para pessoas surdas e deficientes auditivos.</p>
+      </article>
+      <article class="border-l-4 border-blue-700 p-3 bg-blue-50 rounded-md">
+        <h4 class="font-semibold mb-1">📚 Educação</h4>
+        <p class="text-blue-900 text-sm leading-relaxed">Promovemos o aprendizado de Libras como ferramenta de comunicação e inclusão social.</p>
+      </article>
+      <article class="border-l-4 border-blue-700 p-3 bg-blue-50 rounded-md">
+        <h4 class="font-semibold mb-1">💼 Oportunidade</h4>
+        <p class="text-blue-900 text-sm leading-relaxed">Conectamos talentos com empresas que valorizam a diversidade e inclusão.</p>
+      </article>
+    </section>
+
+    <section class="bg-white rounded-md shadow-md p-6">
+      <h3 class="font-semibold text-blue-800 mb-2">História do Projeto</h3>
+      <p class="text-blue-900 text-sm leading-relaxed">
+        O projeto Sonar foi desenvolvido como parte de um curso de Recursos Humanos, com o objetivo de abordar uma necessidade real do mercado de trabalho brasileiro: a inclusão efetiva de pessoas surdas e deficientes auditivos no ambiente profissional.
+      </p>
+      <p class="text-blue-900 text-sm leading-relaxed mt-3">
+        Através de pesquisas e entrevistas com a comunidade surda, identificamos as principais barreiras enfrentadas na busca por oportunidades de trabalho, e desenvolvemos uma solução tecnológica que não apenas conecta candidatos e empresas, mas também educa a sociedade sobre a importância da Libras.
+      </p>
+    </section>
+  </div>
+</section>
+
+<!-- Entrar Section -->
+<section id="entrar" class="max-w-md mx-auto mt-24 mb-12 p-8 bg-white rounded-md shadow-md">
+  <h2 class="text-2xl font-semibold text-center text-blue-800 mb-6">Entrar no Sonar</h2>
+  <form>
+    <label for="email" class="block text-blue-900 font-medium mb-1">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="seu@email.com" required class="w-full border border-blue-300 rounded-md p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <label for="password" class="block text-blue-900 font-medium mb-1">Senha</label>
+    <input type="password" id="password" name="password" placeholder="********" required class="w-full border border-blue-300 rounded-md p-2 mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <button type="submit" class="w-full bg-blue-700 text-white rounded-md py-2 font-semibold hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500">Entrar</button>
+  </form>
+  <p class="mt-4 text-sm text-center text-blue-900">
+    Não tem conta? <a href="#cadastrar" class="text-blue-700 hover:underline focus-outline">Cadastre-se aqui</a>
+  </p>
+</section>
+
+<!-- Cadastrar Section -->
+<section id="cadastrar" class="max-w-md mx-auto mb-16 p-8 bg-white rounded-md shadow-md">
+  <h2 class="text-2xl font-semibold text-center text-blue-800 mb-6">Cadastrar no Sonar</h2>
+  <form>
+    <label for="nome" class="block text-blue-900 font-medium mb-1">Nome Completo</label>
+    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" class="w-full border border-blue-300 rounded-md p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+    <label for="email-cad" class="block text-blue-900 font-medium mb-1">E-mail</label>
+    <input type="email" id="email-cad" name="email-cad" required placeholder="seu@email.com" class="w-full border border-blue-300 rounded-md p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+    <label for="senha-cad" class="block text-blue-900 font-medium mb-1">Senha</label>
+    <input type="password" id="senha-cad" name="senha-cad" required placeholder="********" class="w-full border border-blue-300 rounded-md p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+    <label for="tipo-conta" class="block text-blue-900 font-medium mb-1">Tipo de conta</label>
+    <select id="tipo-conta" name="tipo-conta" class="w-full border border-blue-300 rounded-md p-2 mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <option value="candidato">Candidato a Emprego</option>
+      <option value="empresa">Empresa Recrutadora</option>
+      <option value="aluno">Aluno de Libras</option>
+    </select>
+    <button type="submit" class="w-full bg-blue-700 text-white rounded-md py-2 font-semibold hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500">Cadastrar</button>
+  </form>
+  <p class="mt-4 text-sm text-center text-blue-900">
+    Já tem conta? <a href="#entrar" class="text-blue-700 hover:underline focus-outline">Entre aqui</a>
+  </p>
+</section>
+
+<script>
+  // Mobile menu toggle
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelectorAll('.nav-link');
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Navigation active link highlighting on scroll and click
+  const sections = ['inicio', 'cursos', 'vagas', 'sobre-nos'];
+  const navItems = {
+    inicio: document.getElementById('nav-inicio'),
+    cursos: document.getElementById('nav-cursos'),
+    vagas: document.getElementById('nav-vagas'),
+    'sobre-nos': document.getElementById('nav-sobre'),
+  };
+
+  function highlightNav() {
+    let scrollPos = window.scrollY + window.innerHeight / 3;
+    for (const sec of sections) {
+      const section = document.getElementById(sec);
+      if (section) {
+        const offsetTop = section.offsetTop;
+        const offsetHeight = section.offsetHeight;
+        if ((scrollPos >= offsetTop) && (scrollPos < offsetTop + offsetHeight)) {
+          Object.values(navItems).forEach(item => item.classList.remove('active'));
+          if (navItems[sec]) navItems[sec].classList.add('active');
+          break;
+        }
+      }
+    }
+  }
+
+  window.addEventListener('scroll', highlightNav);
+
+  // Initial call to set correct active nav item on page load
+  highlightNav();
+
+  // Smooth scrolling for navigation
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: "smooth"});
+        // close mobile menu if open
+        if (!mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('hidden');
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
+

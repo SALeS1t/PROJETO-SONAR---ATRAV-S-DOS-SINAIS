@@ -1,0 +1,18 @@
+/* Custom focus outline style for accessibility */
+  .focus-outline:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+
+  /* Simple transition for buttons */
+  button, .btn-link {
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Nav link active styling */
+  .nav-link.active {
+    border: 2px solid #256d85;
+    border-radius: 0.375rem; /* rounded-md */
+    color: #256d85;
+    font-weight: 600;
+  }
